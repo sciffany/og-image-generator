@@ -5,23 +5,33 @@ export const config = {
   runtime: "edge",
 };
 
-// Make sure the font exists in the specified path:
 const font = fetch(
   new URL("../../assets/RobotoCondensed-Bold.ttf", import.meta.url)
 ).then((res) => res.arrayBuffer());
 
-const font2 = fetch(
-  new URL("../../assets/Roboto-Black.ttf", import.meta.url)
-).then((res) => res.arrayBuffer());
+const WIDTH = 1200;
+const HEIGHT = 630;
 
 export default async function handler(req: NextRequest) {
   const fontData = await font;
-  const fontData2 = await font2;
+
   const { searchParams } = req.nextUrl;
+
   const name = searchParams.get("name");
-  const url = searchParams.get("url");
+  const imageUrl = searchParams.get("image-url");
   const description = searchParams.get("description");
-  if (!url || !name || !description) {
+  const imageOffset = searchParams.get("image-offset");
+  const takeAppLink = searchParams.get("take-app-link");
+  const descriptionColor = searchParams.get("description-color");
+
+  if (
+    !imageUrl ||
+    !name ||
+    !description ||
+    !imageOffset ||
+    !takeAppLink ||
+    !descriptionColor
+  ) {
     return new ImageResponse(<div>Missing Argument</div>);
   }
 
@@ -30,31 +40,28 @@ export default async function handler(req: NextRequest) {
       <div
         style={{
           display: "flex",
-          fontSize: 60,
-          color: "black",
-          background: "#f6f6f6",
           width: "100%",
           height: "100%",
-          paddingTop: 50,
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          fontFamily: "Helvetica",
         }}
       >
         <img
-          width="630"
-          src={url ?? ""}
+          width="500px"
+          alt="main-image"
+          src={imageUrl ?? ""}
           style={{
             position: "absolute",
             right: "0px",
-            // top: "-270px",
+            top: imageOffset + "px",
             objectFit: "contain",
           }}
         />
 
         <img
-          width="1400"
+          alt="blue-overlay"
+          width="1200"
           height="630"
           src="https://og-image-generator-ochre.vercel.app/blue9.png"
           style={{
@@ -63,29 +70,8 @@ export default async function handler(req: NextRequest) {
           }}
         />
 
-        {/* <img
-          width="100"
-          height="100"
-          src="https://scontent.fmnl17-5.fna.fbcdn.net/v/t39.30808-6/309555303_402662378700550_9135190593864397646_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFAnLOKbE4FAy6g2R7dqz2O-f-XmfxyBgj5_5eZ_HIGCA_DKvrE3ljjyFSi4TnaSpdTWtmwzrwefnniIhQkyRCe&_nc_ohc=U7EMpZbz32gAX9m-a_L&_nc_ht=scontent.fmnl17-5.fna&oh=00_AfC_gGelhy8hMWJDL0z2NafZiXLSEmItbcgTWpW0AmEJCw&oe=63D7C372"
-          style={{
-            position: "absolute",
-            top: "30",
-            left: "30",
-            objectFit: "cover",
-          }}
-        /> */}
         <div
-          style={{
-            position: "absolute",
-            left: "-200px",
-            top: "480px",
-            width: "700px",
-            height: "220px",
-            transform: "skew(-30deg)",
-            background: "rgb(142,67,48)",
-          }}
-        ></div>
-        <div
+          id="title"
           style={{
             position: "absolute",
             left: "20px",
@@ -96,10 +82,25 @@ export default async function handler(req: NextRequest) {
             fontFamily: '"Roboto"',
             color: "#E2CFBC",
             backgroundColor: "#1B2D51",
+            paddingLeft: "20px",
           }}
         >
           {name.toUpperCase()}
         </div>
+
+        <div
+          id="bottom-left-trapezoid"
+          style={{
+            position: "absolute",
+            left: "-100px",
+            top: "480px",
+            width: "700px",
+            height: "220px",
+            transform: "skew(-30deg)",
+            background: descriptionColor,
+          }}
+        />
+
         <div
           style={{
             position: "absolute",
@@ -114,7 +115,9 @@ export default async function handler(req: NextRequest) {
         >
           {description}
         </div>
+
         <div
+          id="bottom-right-trapezoid"
           style={{
             position: "absolute",
             right: "-160px",
@@ -124,11 +127,12 @@ export default async function handler(req: NextRequest) {
             transform: "skew(-30deg)",
             background: "white",
           }}
-        ></div>
+        />
+
         <div
           style={{
             position: "absolute",
-            left: "1000px",
+            right: "-180px",
             bottom: "-100px",
             width: "550px",
             height: "170px",
@@ -136,22 +140,17 @@ export default async function handler(req: NextRequest) {
             fontFamily: '"RobotoCondensed"',
           }}
         >
-          {"syipcafe.take.app"}
+          {takeAppLink}
         </div>
       </div>
     ),
     {
-      width: 1400,
+      width: 1200,
       height: 630,
       fonts: [
         {
           name: "RobotoCondensed",
           data: fontData,
-          style: "normal",
-        },
-        {
-          name: "Roboto",
-          data: fontData2,
           style: "normal",
         },
       ],
