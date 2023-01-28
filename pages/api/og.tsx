@@ -39,6 +39,7 @@ export default async function handler(req: NextRequest) {
     (
       <div
         style={{
+          backgroundColor: "#0D1E3A",
           display: "flex",
           width: "100%",
           height: "100%",
@@ -54,7 +55,7 @@ export default async function handler(req: NextRequest) {
           style={{
             position: "absolute",
             right: "0px",
-            top: imageOffset + "px",
+            top: (imageOffset ?? 100) + "px",
             objectFit: "contain",
           }}
         />
