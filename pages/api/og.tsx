@@ -56,7 +56,7 @@ export default async function handler(req: NextRequest) {
         <img
           width="1400"
           height="630"
-          src="http://localhost:3000/blue8.png"
+          src="https://og-image-generator-ochre.vercel.app/blue9.png"
           style={{
             position: "absolute",
             objectFit: "cover",
