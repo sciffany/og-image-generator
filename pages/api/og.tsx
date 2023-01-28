@@ -75,10 +75,9 @@ export default async function handler(req: NextRequest) {
           style={{
             position: "absolute",
             left: "20px",
-            bottom: "240px",
-            width: `${70 * name.length + 120}px`,
-            height: "180px",
-            fontSize: "150px",
+            top: "240px",
+            width: "750px",
+            fontSize: name.length <= 10 ? "120px" : "80px",
             fontFamily: '"Roboto"',
             color: "#E2CFBC",
             backgroundColor: "#1B2D51",
@@ -132,11 +131,11 @@ export default async function handler(req: NextRequest) {
         <div
           style={{
             position: "absolute",
-            right: "-180px",
-            bottom: "-100px",
+            right: "-150px",
+            bottom: "-110px",
             width: "550px",
             height: "170px",
-            fontSize: "45px",
+            fontSize: "30px",
             fontFamily: '"RobotoCondensed"',
           }}
         >
