@@ -30,6 +30,9 @@ export default function Home() {
         <meta name="og:description" content="Makanan Panas, Ala Carte, Satay" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
+      <h1 className="text-3xl font-bold underline">
+      Hello world!
+    </h1>
     </>
   );
 }

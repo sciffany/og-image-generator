@@ -19,22 +19,22 @@ export default async function handler(req: NextRequest) {
 
   const name = searchParams.get("name");
   const imageUrl = searchParams.get("image-url");
-  const color1 = searchParams.get("color1");
-  const color2 = searchParams.get("color2");
+  const imageOffset = searchParams.get("image-offset");
+  const logoUrl = searchParams.get("logo-url");
 
   if (
     !imageUrl ||
     !name ||
-    !color1 ||
-    !color2
+    !imageOffset ||
+    !logoUrl
   ) {
     return new ImageResponse(<div>Missing Argument</div>);
   }
 
   return new ImageResponse(
     (
-    <div style={{display:"flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100%", width: "100%", backgroundImage: `linear-gradient(${color1}, ${color2})`}}>
-      <img width="380px" src={imageUrl}/>
+    <div style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100%", width: "100%", backgroundImage: "linear-gradient(#2D872F, #2D872F)"}}>
+      <img width="380px" src={logoUrl}/>
       <div style={{fontSize: "60px", marginTop: "30px"}}>{name}</div>
     </div>
     ),
