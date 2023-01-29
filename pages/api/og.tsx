@@ -9,8 +9,8 @@ const font = fetch(
   new URL("../../assets/RobotoCondensed-Bold.ttf", import.meta.url)
 ).then((res) => res.arrayBuffer());
 
-const WIDTH = 1200;
-const HEIGHT = 630;
+const WIDTH = 400;
+const HEIGHT = 400;
 
 export default async function handler(req: NextRequest) {
   const fontData = await font;

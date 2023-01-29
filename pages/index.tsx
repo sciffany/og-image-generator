@@ -23,8 +23,8 @@ export default function Home() {
           property="og:image"
           content="https://og-image-generator-ochre.vercel.app/api/og?image-url=https%3A%2F%2Fstorage.googleapis.com%2Ftakesg%2Fb45642fb-b5d0-40c0-bcea-e1fcf295f729.png&w=256&q=75&description=Makanan%20Panas,%20Ala%20Thai,%20Satay&image-offset=80&take-app-link=https%3A%2F%2Ftake.app%2Fs%2F60177049947&description-color=%23FF0000&name=D%20ROSE%20Station&logo-url=https%3A%2F%2Fstorage.googleapis.com%2Ftakesg%2Fb45642fb-b5d0-40c0-bcea-e1fcf295f729.png&w=256&q=75"
         />
-        <meta property="og:image:height" content="1200" />
-        <meta property="og:image:width" content="630" />
+        <meta property="og:image:height" content="400" />
+        <meta property="og:image:width" content="400" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:type" content="website" />
         <meta name="og:description" content="Makanan Panas, Ala Carte, Satay" />
