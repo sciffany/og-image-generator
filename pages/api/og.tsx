@@ -95,7 +95,7 @@ export default async function handler(req: NextRequest) {
             left: "20px",
             top: "240px",
             maxWidth: "750px",
-            fontSize: name.length <= 12 ? "120px" : "80px",
+            fontSize: name.length <= 11 ? "120px" : "80px",
             fontFamily: '"Roboto"',
             color: "#E2CFBC",
             backgroundColor: "#1B2D51",
