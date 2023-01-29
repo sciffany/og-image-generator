@@ -21,6 +21,7 @@ export default async function handler(req: NextRequest) {
   const imageUrl = searchParams.get("image-url");
   const color1 = searchParams.get("color1");
   const color2 = searchParams.get("color2");
+  const textColor = searchParams.get("text-color");
 
   if (
     !imageUrl ||
@@ -35,7 +36,7 @@ export default async function handler(req: NextRequest) {
     (
     <div style={{display:"flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100%", width: "100%", backgroundImage: `linear-gradient(${color1}, ${color2})`}}>
       <img width="380px" src={imageUrl}/>
-      <div style={{fontSize: "60px", marginTop: "30px"}}>{name}</div>
+      <div style={{fontSize: "60px", marginTop: "30px", color: textColor ?? "black"}}>{name}</div>
     </div>
     ),
     {
