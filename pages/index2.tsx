@@ -16,7 +16,7 @@ export default function Home() {
       <Head>
         <title>Quanta Pharmaceuticals</title>
         <meta
-          property="og:image"
+          property="og:image:secure_url"
           content="https://og-image-generator-ochre.vercel.app/api/og?image-url=https%3A%2F%2Fstorage.googleapis.com%2Ftakesg%2F291e653a-c186-44ab-8bf3-2ded22a36a82.jpeg&w=256&q=75&description=Premium%20products%20for%20athletes&image-offset=80&take-app-link=https%3A%2F%2Ftake.app%2Fs%2F447377573693&description-color=%238C8C8C&name=Quanta%20Pharmaceuticals&logo-url=https%3A%2F%2Fstorage.googleapis.com%2Ftakesg%2F291e653a-c186-44ab-8bf3-2ded22a36a82.jpeg&w=256&q=75"
         />
         <meta name="og:description" content="Premium product for athletes" />
