@@ -35,7 +35,7 @@ export default async function handler(req: NextRequest) {
   return new ImageResponse(
     (
     <div style={{display:"flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100%", width: "100%", backgroundImage: `linear-gradient(${color1}, ${color2})`}}>
-      <img width="360px" height="360px" style={{borderRadius: "50%", objectFit: "contain",}} src={imageUrl}/>
+      <img width="360px" height="360px" style={{borderRadius: "50%", objectFit: "cover",}} src={imageUrl}/>
       <div style={{fontSize: "60px", marginTop: "30px", color: textColor ?? "black"}}>{name}</div>
     </div>
     ),
