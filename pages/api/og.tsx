@@ -94,7 +94,7 @@ export default async function handler(req: NextRequest) {
             position: "absolute",
             left: "20px",
             top: "240px",
-            // width: "750px",
+            maxWidth: "750px",
             fontSize: name.length <= 10 ? "120px" : "80px",
             fontFamily: '"Roboto"',
             color: "#E2CFBC",
@@ -150,12 +150,16 @@ export default async function handler(req: NextRequest) {
         <div
           style={{
             position: "absolute",
-            right: "-150px",
-            bottom: "-110px",
-            width: "550px",
-            height: "170px",
+            // right: "-150px",
+            // bottom: "-110px",
+            display: "flex",
+            width: "1200",
+            height: "630",
             fontSize: "30px",
             fontFamily: '"RobotoCondensed"',
+            padding: "20px",
+            alignItems: "flex-end",
+            justifyContent: "flex-end",
           }}
         >
           {takeAppLink}
