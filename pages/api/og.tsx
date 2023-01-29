@@ -94,12 +94,13 @@ export default async function handler(req: NextRequest) {
             position: "absolute",
             left: "20px",
             top: "240px",
-            width: "750px",
+            // width: "750px",
             fontSize: name.length <= 10 ? "120px" : "80px",
             fontFamily: '"Roboto"',
             color: "#E2CFBC",
             backgroundColor: "#1B2D51",
             paddingLeft: "20px",
+            paddingRight: "20px",
           }}
         >
           {name.toUpperCase()}
