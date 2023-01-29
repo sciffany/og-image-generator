@@ -23,6 +23,7 @@ export default async function handler(req: NextRequest) {
   const imageOffset = searchParams.get("image-offset");
   const takeAppLink = searchParams.get("take-app-link");
   const descriptionColor = searchParams.get("description-color");
+  const logoUrl = searchParams.get("logo-url");
 
   if (
     !imageUrl ||
@@ -70,6 +71,22 @@ export default async function handler(req: NextRequest) {
             objectFit: "cover",
           }}
         />
+
+        {logoUrl && (
+          <img
+            alt="logo"
+            width="150px"
+            height="150px"
+            src={logoUrl}
+            style={{
+              left: "20px",
+              top: "20px",
+              borderRadius: "50%",
+              position: "absolute",
+              objectFit: "cover",
+            }}
+          />
+        )}
 
         <div
           id="title"
