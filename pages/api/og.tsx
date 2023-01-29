@@ -63,8 +63,8 @@ export default async function handler(req: NextRequest) {
 
         <img
           alt="blue-overlay"
-          width="1200"
-          height="630"
+          width={WIDTH}
+          height={HEIGHT}
           src="https://og-image-generator-ochre.vercel.app/blue9.png"
           style={{
             position: "absolute",
@@ -167,8 +167,8 @@ export default async function handler(req: NextRequest) {
       </div>
     ),
     {
-      width: 600,
-      height: 315,
+      width: WIDTH,
+      height: HEIGHT,
       fonts: [
         {
           name: "RobotoCondensed",
