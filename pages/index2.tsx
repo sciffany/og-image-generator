@@ -14,12 +14,12 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>D Rose Station</title>
+        <title>Quanta Pharmaceuticals</title>
         <meta
           property="og:image"
-          content="https://og-image-generator-ochre.vercel.app/api/og?image-url=https%3A%2F%2Fstorage.googleapis.com%2Ftakesg%2Fb45642fb-b5d0-40c0-bcea-e1fcf295f729.png&w=256&q=75&description=Makanan%20Panas,%20Ala%20Thai,%20Satay&image-offset=80&take-app-link=https%3A%2F%2Ftake.app%2Fs%2F60177049947&description-color=%23FF0000&name=D%20ROSE%20Station&logo-url=https%3A%2F%2Fstorage.googleapis.com%2Ftakesg%2Fb45642fb-b5d0-40c0-bcea-e1fcf295f729.png&w=256&q=75"
+          content="https://og-image-generator-ochre.vercel.app/api/og?image-url=https%3A%2F%2Fstorage.googleapis.com%2Ftakesg%2F291e653a-c186-44ab-8bf3-2ded22a36a82.jpeg&w=256&q=75&description=Premium%20products%20for%20athletes&image-offset=80&take-app-link=https%3A%2F%2Ftake.app%2Fs%2F447377573693&description-color=%238C8C8C&name=Quanta%20Pharmaceuticals&logo-url=https%3A%2F%2Fstorage.googleapis.com%2Ftakesg%2F291e653a-c186-44ab-8bf3-2ded22a36a82.jpeg&w=256&q=75"
         />
-        <meta name="og:description" content="Makanan Panas, Ala Carte, Satay" />
+        <meta name="og:description" content="Premium product for athletes" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
 
