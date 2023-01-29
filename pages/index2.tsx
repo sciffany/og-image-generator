@@ -17,11 +17,12 @@ export default function Home() {
         <title>Quanta Pharmaceuticals</title>
         <meta
           property="og:image:secure_url"
-          content="https://og-image-generator-ochre.vercel.app/api/og?image-url=https%3A%2F%2Fstorage.googleapis.com%2Ftakesg%2F291e653a-c186-44ab-8bf3-2ded22a36a82.jpeg&w=256&q=75&name=Quanta%20Pharmaceuticals&color1=%23F6F6F6&color2=%23F6F6F6"
+          content="https://og-image-generator-ochre.vercel.app/api/og3?image-url=https%3A%2F%2Fstorage.googleapis.com%2Ftakesg%2F291e653a-c186-44ab-8bf3-2ded22a36a82.jpeg&w=256&q=75&description=Premium%20products%20for%20athletes&image-offset=80&take-app-link=https%3A%2F%2Ftake.app%2Fs%2F447377573693&description-color=%238C8C8C&name=Quanta%20Pharmaceuticals&logo-url=https%3A%2F%2Fstorage.googleapis.com%2Ftakesg%2F291e653a-c186-44ab-8bf3-2ded22a36a82.jpeg&w=256&q=75"
         />
         <meta
           property="og:image"
-          content="https://og-image-generator-ochre.vercel.app/api/og?image-url=https%3A%2F%2Fstorage.googleapis.com%2Ftakesg%2F291e653a-c186-44ab-8bf3-2ded22a36a82.jpeg&w=256&q=75&name=Quanta%20Pharmaceuticals&color1=%23F6F6F6&color2=%23F6F6F6"
+          content="https://og-image-generator-ochre.vercel.app/api/og3?image-url=https%3A%2F%2Fstorage.googleapis.com%2Ftakesg%2F291e653a-c186-44ab-8bf3-2ded22a36a82.jpeg&w=256&q=75&description=Premium%20products%20for%20athletes&image-offset=80&take-app-link=https%3A%2F%2Ftake.app%2Fs%2F447377573693&description-color=%238C8C8C&name=Quanta%20Pharmaceuticals&logo-url=https%3A%2F%2Fstorage.googleapis.com%2Ftakesg%2F291e653a-c186-44ab-8bf3-2ded22a36a82.jpeg&w=256&q=75
+          "
         />
         <meta property="og:image:height" content="1200" />
         <meta property="og:image:width" content="630" />
