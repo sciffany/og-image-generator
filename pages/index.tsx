@@ -17,11 +17,11 @@ export default function Home() {
         <title>D Rose Station</title>
         <meta
           property="og:image:secure_url"
-          content="https://og-image-generator-ochre.vercel.app/api/og3?image-url=https%3A%2F%2Fstorage.googleapis.com%2Ftakesg%2Fb45642fb-b5d0-40c0-bcea-e1fcf295f729.png&w=256&q=75&description=Makanan%20Panas,%20Ala%20Thai,%20Satay&image-offset=80&take-app-link=https%3A%2F%2Ftake.app%2Fs%2F60177049947&description-color=%23aa0000&name=D%20ROSE%20Station&logo-url=https%3A%2F%2Fstorage.googleapis.com%2Ftakesg%2Fb45642fb-b5d0-40c0-bcea-e1fcf295f729.png&w=256&q=75"
+          content="https://og-image-generator-ochre.vercel.app/api/og?image-url=https%3A%2F%2Fstorage.googleapis.com%2Ftakesg%2Fad73aead-5449-43fb-929c-c8f368d7cb64.jpeg&w=256&q=75&name=Nasi%20Lemak%20Kuning%20Daun%20Pisang&color1=%23FEEACB&color2=%23FEEACB"
         />
         <meta
           property="og:image"
-          content="https://og-image-generator-ochre.vercel.app/api/og3?image-url=https%3A%2F%2Fstorage.googleapis.com%2Ftakesg%2Fb45642fb-b5d0-40c0-bcea-e1fcf295f729.png&w=256&q=75&description=Makanan%20Panas,%20Ala%20Thai,%20Satay&image-offset=80&take-app-link=https%3A%2F%2Ftake.app%2Fs%2F60177049947&description-color=%23aa0000&name=D%20ROSE%20Station&logo-url=https%3A%2F%2Fstorage.googleapis.com%2Ftakesg%2Fb45642fb-b5d0-40c0-bcea-e1fcf295f729.png&w=256&q=75"
+          content="https://og-image-generator-ochre.vercel.app/api/og?image-url=https%3A%2F%2Fstorage.googleapis.com%2Ftakesg%2Fad73aead-5449-43fb-929c-c8f368d7cb64.jpeg&w=256&q=75&name=Nasi%20Lemak%20Kuning%20Daun%20Pisang&color1=%23FEEACB&color2=%23FEEACB"
         />
         <meta property="og:image:height" content="1200" />
         <meta property="og:image:width" content="630" />

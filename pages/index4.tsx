@@ -17,11 +17,11 @@ export default function Home() {
         <title>Depot Canteen</title>
         <meta
           property="og:image:secure_url"
-          content="https://og-image-generator-ochre.vercel.app/api/og?image-url=https%3A%2F%2Fstorage.googleapis.com%2Ftakesg%2F381e271f-7f24-4134-81ee-3c8231318279.jpg&w=256&q=75&name=Depot%20Canteen&color1=yellow&color2=orange"
+          content="https://og-image-generator-ochre.vercel.app/api/og?image-url=https%3A%2F%2Fstorage.googleapis.com%2Ftakesg%2F3f4c87a3-a0a6-40d2-9fb7-a4abe91a40b6.png&w=256&q=75&name=Proof33&color1=%23C6BFBF&color2=%234A8BB0"
         />
         <meta
           property="og:image"
-          content="https://og-image-generator-ochre.vercel.app/api/og?image-url=https%3A%2F%2Fstorage.googleapis.com%2Ftakesg%2F381e271f-7f24-4134-81ee-3c8231318279.jpg&w=256&q=75&name=Depot%20Canteen&color1=yellow&color2=orange"
+          content="https://og-image-generator-ochre.vercel.app/api/og?image-url=https%3A%2F%2Fstorage.googleapis.com%2Ftakesg%2F3f4c87a3-a0a6-40d2-9fb7-a4abe91a40b6.png&w=256&q=75&name=Proof33&color1=%23C6BFBF&color2=%234A8BB0"
         />
         <meta property="og:image:height" content="1200" />
         <meta property="og:image:width" content="630" />

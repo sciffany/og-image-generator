@@ -14,14 +14,14 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Suguru Home Dining</title>
+        <title>Depot Canteen</title>
         <meta
           property="og:image:secure_url"
-          content="https://og-image-generator-ochre.vercel.app/api/og?image-url=https%3A%2F%2Fstorage.googleapis.com%2Ftakesg%2F1b86fb45-fdd1-4dff-baa5-0935addd1aa7.png&w=256&q=75&name=SG%20Vape%20Shop&color1=%230061FE&color2=%230061FE"
+          content="https://og-image-generator-ochre.vercel.app/api/og?image-url=https%3A%2F%2Fstorage.googleapis.com%2Ftakesg%2F7ae87daa-f9df-4e1a-bc81-52c10d0139bc.png&w=256&q=75&name=Timely%20Cereal%20Shop&color1=%2337BCF7&color2=%23B9E5FC"
         />
         <meta
           property="og:image"
-          content="https://og-image-generator-ochre.vercel.app/api/og?image-url=https%3A%2F%2Fstorage.googleapis.com%2Ftakesg%2F1b86fb45-fdd1-4dff-baa5-0935addd1aa7.png&w=256&q=75&name=SG%20Vape%20Shop&color1=%230061FE&color2=%230061FE"
+          content="https://og-image-generator-ochre.vercel.app/api/og?image-url=https%3A%2F%2Fstorage.googleapis.com%2Ftakesg%2F7ae87daa-f9df-4e1a-bc81-52c10d0139bc.png&w=256&q=75&name=Timely%20Cereal%20Shop&color1=%2337BCF7&color2=%23B9E5FC"
         />
         <meta property="og:image:height" content="1200" />
         <meta property="og:image:width" content="630" />
