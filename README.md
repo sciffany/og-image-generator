@@ -41,6 +41,11 @@ pnpm dev
 
 `https://og-image-generator-ochre.vercel.app/api/og?image-url=https%3A%2F%2Fstorage.googleapis.com%2Ftakesg%2Fad73aead-5449-43fb-929c-c8f368d7cb64.jpeg&w=256&q=75&name=Nasi%20Lemak%20Kuning%20Daun%20Pisang&color1=%23FEEACB&color2=%23FEEACB`
 
+
+### Sample image:
+<img src="https://og-image-generator-ochre.vercel.app/api/og?image-url=https%3A%2F%2Fstorage.googleapis.com%2Ftakesg%2Fad73aead-5449-43fb-929c-c8f368d7cb64.jpeg&w=256&q=75&name=Nasi%20Lemak%20Kuning%20Daun%20Pisang&color1=%23FEEACB&color2=%23FEEACB" width="200px"/>
+
+
 ### Sample usage:
 https://github.com/sciffany/og-image-generator/blob/main/pages/index.tsx
 
