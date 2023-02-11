@@ -32,6 +32,7 @@ pnpm dev
 | name           | Name of the company                 | Yes       |
 | color1         | Hex colour on the left of the gradient (including # symbol or %23)  | Yes       |
 | color2         | Hex colour on the right of the gradient (including # symbol or %23) | Yes       |
+| text-color         | Hex colour of the text (including # symbol or %23) | No       |
 
 ### Sample endpoint:
 
