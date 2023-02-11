@@ -1,9 +1,12 @@
-## Getting Started
+## Starting Development Server
 
-First, run the development server:
+Please run any of the following commands to start the development server:
 
 ```
 pnpm dev
+```
+```
+npm dev
 ```
 
 ## Folder structure 
@@ -15,7 +18,7 @@ pnpm dev
        |-og.tsx - endpoint to generate simple/clean-style OG images
        |-og2.tsx - endpoint to generate black torn paper OG images (unused)
        |-og3.tsx - endpoint to generate original blue OG images (unused)
-   |-index*.tsx - sample usage of OG images
+   |-index*.tsx - sample usages of OG images
 |- public
    |- proposal/* - original Photoshop designs (unused)
    |- *.* - blue overlay for original blue design (unused)
