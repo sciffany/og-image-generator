@@ -1,5 +1,3 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
 First, run the development server:
@@ -12,27 +10,47 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Folder structure 
+```
+|- assets
+   |- FreeSansBold.ttf - font for simple/clean style OG images
+|- pages
+   |- api
+       |-og.tsx - endpoint to generate simple/clean-style OG images
+       |-og2.tsx - endpoint to generate black torn paper OG images (unused)
+       |-og3.tsx - endpoint to generate original blue OG images (unused)
+   |-index*.tsx - sample usage of OG images
+|- public
+   |- proposal/* - original Photoshop designs (unused)
+   |- *.* - blue overlay for original blue design (unused)
+       
+```
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## How to generate OG images
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+**Endpoint:** `https://og-image-generator-ochre.vercel.app/api/og`
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+| Parameter name | Description                         | Mandatory |
+|----------------|-------------------------------------|-----------|
+| image-url      | Image URL of the logo               | Yes       |
+| name           | Name of the company                 | Yes       |
+| color1         | Hex colour on the left of the gradient (including # symbol or %23)  | Yes       |
+| color2         | Hex colour on the right of the gradient (including # symbol or %23) | Yes       |
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Sample endpoint:
 
-## Learn More
+`https://og-image-generator-ochre.vercel.app/api/og?image-url=https%3A%2F%2Fstorage.googleapis.com%2Ftakesg%2Fad73aead-5449-43fb-929c-c8f368d7cb64.jpeg&w=256&q=75&name=Nasi%20Lemak%20Kuning%20Daun%20Pisang&color1=%23FEEACB&color2=%23FEEACB`
 
-To learn more about Next.js, take a look at the following resources:
+### Sample usage:
+https://github.com/sciffany/og-image-generator/blob/main/pages/index.tsx
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## OG Image details
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Size: `1200px x 630px`
+- OG image type: `PNG`
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## How to deploy on Vercel
+- Use Next.js presets
+- Root directory - ""
+- Node version: 18.x
+- No environment variables
